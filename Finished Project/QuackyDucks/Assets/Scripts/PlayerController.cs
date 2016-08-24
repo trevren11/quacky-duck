@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour {
 	//updates the players velocity every fixed frame
 	void FixedUpdate() 
 	{
-		rigidbody2D.velocity = _velocity;	
+		GetComponent<Rigidbody2D>().velocity = _velocity;	
 	}
 
 	//this handles the player passing through the trigger area in the middle of pipes

@@ -18,7 +18,7 @@ public class Obstacle : MonoBehaviour {
 		//setup the pipe keeping it's current x position but randomly choosing it's y
 		InitializePipe(transform.position.x);
 		//set the x velocity of the pipe to the speed value
-		rigidbody2D.velocity = new Vector2(speed,0);
+		GetComponent<Rigidbody2D>().velocity = new Vector2(speed,0);
 	}
 	
 	void Update()
